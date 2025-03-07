@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸Happy Holi 2025🌸</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Sacramento&display=swap');
+
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            font-family: 'Poppins', sans-serif;
+            overflow-y: auto;
+            margin: 0;
+            min-height: 100vh;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 55px;
+            font-family: 'Sacramento', cursive;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        .shayari {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px auto;
+            width: 90%;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .show-footer {
+            opacity: 1;
+        }
+
+        .name {
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;  /* Now using Poppins */
+            font-weight: bold;
+            color: #ff5722;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨🌸✨Happy Holi 2025✨🌸🎨</h1>
+    
+    <div class="shayari" id="shayari1">
+        🌈 रंगों से भी रंगीन ज़िन्दगी हो जाए,  
+        🎉 खुशियों से भर जाए ये होली!  
+        💜 प्यार की पिचकारी से दुनिया रंग जाए,  
+        💚 आओ मिलकर मनाएं ये होली!  
+    </div>
+
+    <div class="shayari" id="shayari2">
+        🎭 गुलाल की खुशबू, अपनों का प्यार,  
+        💖 रंगों की बहार, बधाई हो यार!  
+        🎊 ये होली लाए सुख-समृद्धि,  
+        🌟 हर रंग में बस हो खुशहाली!  
+    </div>
+
+    <div class="shayari" id="shayari3">
+        🎊 कभी लाल, कभी पीला, हर रंग लगे प्यारा,  
+        ❤️ होली है भाई, बस प्यार ही हो हमारा!  
+        💙 दिल से दिल तक चले ये रंगों की बारिश,  
+        💛 खुशियां ही खुशियां, ना कोई ग़म बाकी!  
+    </div>
+
+    <div class="shayari" id="shayari4">
+        🎶 जो खुशियों की हो बारिश, जो रंगों का हो सागर,  
+        💕 ऐसी हो आपकी होली, हर ग़म हो जाए फागर!  
+        💖 मस्ती में झूमे सब यार,  
+        🎨 बोलो रंगों की जय जयकार!  
+    </div>
+
+    <div class="shayari" id="shayari5">
+        ✨ खुशियों का मौसम, रंगों की बौछार,  
+        💌 मिलके मनाएं होली बार-बार!  
+        🎭 हर चेहरे पे मुस्कान हो,  
+        ❤️ संग अपने अपनों का साथ हो!  
+    </div>
+
+    <div class="footer" id="footer">
+        🎶 रंगों से सजी हो ये दुनिया सारी,  
+        ❤️ आपके जीवन में आए खुशहाली भारी!  
+        <br>💌 आपको और आपके परिवार को होली की हार्दिक शुभकामनाएं!  
+        <br><br>
+        💖 With Love,  
+        <span class="name">Aayush | AyTech Studio ©</span>
+    </div>
+
+    <script>
+        function showShayari() {
+            setTimeout(() => document.getElementById('shayari1').classList.add('visible'), 500);
+            setTimeout(() => document.getElementById('shayari2').classList.add('visible'), 3000);
+            setTimeout(() => document.getElementById('shayari3').classList.add('visible'), 5500);
+            setTimeout(() => document.getElementById('shayari4').classList.add('visible'), 8000);
+            setTimeout(() => document.getElementById('shayari5').classList.add('visible'), 10500);
+            setTimeout(() => document.getElementById('footer').classList.add('show-footer'), 13000);
+        }
+        window.onload = showShayari;
+    </script>
+</body>
+</html>
